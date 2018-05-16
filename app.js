@@ -1,8 +1,12 @@
 const routes = require('./routes');
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var nunjucks = require('nunjucks');
 var path = require('path');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.set('view engine', 'html'); // hace que res.render funcione con archivos html
 app.engine('html', nunjucks.render); // cuando le den archivos html a res.render, va a usar nunjucks

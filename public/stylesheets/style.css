@@ -56,3 +56,16 @@ code {
 .content .by {
   font-weight: bold;
 }
+div#fotoTweet {
+  float: left;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  color: cornflowerblue;
+}
+
+.form1 {
+  margin-bottom: 60px;
+}
