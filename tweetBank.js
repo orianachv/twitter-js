@@ -4,8 +4,7 @@ var data = [];
 var nroid = 0;
 
 function add(name, content) {
-  data.push({ name: name, content: content, id: nroid });
-  nroid++;
+  data.push({ name: name, content: content, id: nroid++ });
 }
 function list() {
   return _.cloneDeep(data);
